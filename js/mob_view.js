@@ -274,7 +274,11 @@ const renderCustomColumnChooser = (targetLHTMLElement, columns) => {
                 isChecked: column.visible
             };
         });
-        treeData.filter(item => item.isChecked === false).forEach(item => updatedColumns.push(item.name));
+        treeData.filter(item => item.isChecked === false).forEach(item => {
+            if (!updatedColumns.includes(item.name)) {
+                updatedColumns.push(item.name);
+            }
+        });
         const uniquePids = [];
         treeData.forEach(item => {
             if (!uniquePids.includes(item.pid)) {
