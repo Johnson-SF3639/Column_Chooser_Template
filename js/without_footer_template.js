@@ -342,6 +342,7 @@ let grid = new ej.grids.Grid({
           textAlign: 'Right',
           width: 130,
           isPrimaryKey: true,
+          showInColumnChooser: false,
         },
         {
           field: 'CustomerName',
@@ -357,7 +358,6 @@ let grid = new ej.grids.Grid({
               headerText: 'Order ID',
               textAlign: 'Right',
               width: 140,
-              showInColumnChooser: false,
             },
             {
               field: 'OrderDate',
