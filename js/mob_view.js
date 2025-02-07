@@ -419,6 +419,7 @@ var grid = new ej.grids.Grid({
     }
     if (args.requestType === 'columnChooserClose') {
       args.cancel = false;
+      updatedColumns = [];
     }
     if (args.requestType === 'columnChooserSearch') {
       args.cancel = false;
