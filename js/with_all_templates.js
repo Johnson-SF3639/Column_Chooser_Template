@@ -519,6 +519,7 @@ if(document.getElementById('abortButton')){
     document.getElementById('abortButton').onclick = () => {
         const grid = document.getElementById('Grid').ej2_instances[0];
         grid.columnChooserModule.hideDialog();
+        updatedColumns = [];
     };    
 }
 
